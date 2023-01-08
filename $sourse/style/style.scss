@@ -1,0 +1,29 @@
+@import url(reset.css);
+@import url(/fonts/inter/inter-fonts.css);
+@import url(/fonts/ruberoid/rub-fonts.css);
+@import url(media.css);
+@import url(anim.css);
+
+body{
+    background-color: #fafafa;
+}
+
+header{
+    background-image: url(/image/header-fon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    .static{
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        .content{
+            display: flex;
+            justify-content: space-around;
+            max-width: 1160px;
+            width: 100%;
+            margin: 0 0;
+        }
+    }
+}

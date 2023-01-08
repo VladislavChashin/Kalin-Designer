@@ -1,0 +1,18 @@
+font-face {
+    font-family: 'inter-regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('inter-regular'), url('Inter-Regular.ttf') format('ttf');
+    }
+font-face {
+    font-family: 'inter-medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('inter-medium'), url('Inter-Medium.ttf') format('ttf');
+    }
+font-face {
+    font-family: 'inter-bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('inter-bold'), url('Inter-SemiBold.ttf') format('ttf');
+    }
