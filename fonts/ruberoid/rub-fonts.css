@@ -1,18 +1,12 @@
-font-face {
+@font-face {
     font-family: 'rub-regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('rub-regular'), url('Ruberoid-Regular.ttf') format('ttf');
+    src: url(Ruberoid-Regular.ttf);
     }
-font-face {
+@font-face {
     font-family: 'rub-medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('rub-medium'), url('Ruberoid-Medium.ttf') format('ttf');
+    src: url(Ruberoid-Medium.ttf);
     }
-font-face {
+@font-face {
     font-family: 'rub-bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('rub-bold'), url('Ruberoid-ExtraBold.ttf') format('ttf');
+    src: url(Ruberoid-ExtraBold.ttf);
     }

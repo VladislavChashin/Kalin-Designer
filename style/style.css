@@ -1,7 +1,6 @@
 @import url(reset.css);
 @import url(/fonts/inter/inter-fonts.css);
 @import url(/fonts/ruberoid/rub-fonts.css);
-@import url(media.css);
 @import url(anim.css);
 body {
   background-color: #fafafa;
@@ -14,18 +13,235 @@ header {
   background-size: cover;
   height: 700px;
 }
+@media (max-width: 768px) {
+  header {
+    height: 500px;
+  }
+}
 header .static {
   position: fixed;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  padding: 30px 0 0 0;
 }
 header .static .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1160px;
   width: 100%;
-  margin: 0 0;
+}
+header .static .content .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 10px 0 10px;
+}
+header .static .content nav {
+  max-width: 419px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  header .static .content nav {
+    display: none;
+  }
+}
+header .static .content nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  header .static .content nav ul {
+    display: none;
+  }
+}
+header .static .content nav ul a {
+  font-family: "inter-medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FAFAFA;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+@media (max-width: 768px) {
+  header .static .content nav ul a {
+    display: none;
+  }
+}
+header .static .content button {
+  background-color: rgba(250, 250, 250, 0);
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FAFAFA;
+  width: 191px;
+  height: 39px;
+  border: 2px solid #FAFAFA;
+  border-radius: 30px;
+}
+@media (max-width: 1100px) {
+  header .static .content button {
+    font-size: 15px;
+    width: 170px;
+    height: 35px;
+  }
+}
+@media (max-width: 768px) {
+  header .static .content button {
+    display: none;
+  }
+}
+header .articly {
+  width: 100%;
+  height: 100%;
+}
+header .articly .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-height: 900px;
+  height: 100%;
+}
+@media (max-width: 1100px) {
+  header .articly .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+header .articly .wrapper .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  max-width: 900px;
+  padding-left: 30px;
+  width: 100%;
+  margin: 0 150px 0 0;
+}
+@media (max-width: 1100px) {
+  header .articly .wrapper .content {
+    max-width: 750px;
+    padding: 0 5px;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  header .articly .wrapper .content {
+    max-width: 400px;
+    padding: 0 5px;
+    margin: 0;
+  }
+}
+@media (max-width: 425px) {
+  header .articly .wrapper .content {
+    max-width: 300px;
+    padding: 0 5px;
+    margin: 0;
+  }
+}
+header .articly .wrapper .content h1 {
+  font-family: "inter-medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 115.5%;
+  color: #FAFAFA;
+  letter-spacing: -0.055em;
+}
+@media (max-width: 1100px) {
+  header .articly .wrapper .content h1 {
+    font-size: 46px;
+    line-height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  header .articly .wrapper .content h1 {
+    font-size: 25px;
+    line-height: 80%;
+  }
+}
+@media (max-width: 425px) {
+  header .articly .wrapper .content h1 {
+    font-size: 18px;
+  }
+}
+header .articly .wrapper .content button {
+  background-color: rgba(250, 250, 250, 0);
+  font-family: "inter-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 105%;
+  color: #e9e9e9;
+  width: 865px;
+  height: 50px;
+  border: 2px solid #FAFAFA;
+  border-radius: 5000px;
+  margin: 30px 0 70px 0;
+}
+@media (max-width: 1100px) {
+  header .articly .wrapper .content button {
+    font-size: 15px;
+    line-height: 95%;
+    width: 750px;
+    height: 45px;
+  }
+}
+@media (max-width: 768px) {
+  header .articly .wrapper .content button {
+    width: 400px;
+    height: 35px;
+    line-height: 80%;
+  }
+}
+@media (max-width: 425px) {
+  header .articly .wrapper .content button {
+    width: 300px;
+  }
 }
