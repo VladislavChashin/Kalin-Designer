@@ -1,0 +1,9 @@
+.fade_1-enter-active {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.fade_1-leave-active {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}

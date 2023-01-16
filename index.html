@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/media.css">
+    <link rel="stylesheet" href="/style/anim.css">
     <title>Kalina-Designer</title>
 </head>
 <body>
@@ -67,23 +67,23 @@
             </div>
         </div>
         <div class="coop">
-            <div class="content">
+            <div class="content" id="app" >
                 <h4>Как с нами сотрудничать?</h4>
                 <div class="article">
                     <h3>Если вы российский дизайнер, бренд или марка и хотите</h3>
                     <p>Kalina это проект, который направлен на активное распространение и развитие fashion индустрии в России. На данный момент мы сотрудничаем более чем с 60 брендами и марками, но мы развиваемся и хотим дать возможность развиваться вам.</p>
                 </div>
-                <div class="wraper">
-                    <!--<h6>1</h6>-->
-                    <p>Больше уделять времени творчеству и работе над коллекциями</p>
+                <div class="wraper" @mouseover="upH1 = false, upP1 = true" @mouseleave="upH1 = true, upP1 = false">
+                    <h6 v-show = 'upH1'>1</h6>
+                    <p v-show = 'upP1'>Больше уделять времени творчеству и работе над коллекциями</p>
                 </div>
-                <div class="wraper">
-                    <h6>2</h6>
-                    <!--<p>Больше уделять времени творчеству и работе над коллекциями</p>-->
+                <div class="wraper" @mouseover="upH2 = false, upP2 = true" @mouseleave="upH2 = true, upP2 = false">
+                    <h6 v-show = 'upH2'>2</h6>
+                    <p v-show = 'upP2'>Больше уделять времени творчеству и работе над коллекциями</p>
                 </div>
-                <div class="wraper">
-                    <h6>3</h6>
-                    <!--<p>Больше уделять времени творчеству и работе над коллекциями</p>-->
+                <div class="wraper" @mouseover="upH3 = false, upP3 = true" @mouseleave="upH3 = true, upP3 = false">
+                    <h6 v-show = 'upH3'>3</h6>
+                    <p v-show = 'upP3'>Больше уделять времени творчеству и работе над коллекциями</p>
                 </div>
                 <button>Узнать подробности</button>
             </div>
@@ -95,36 +95,38 @@
                     <h3>Магазины в лучших локациях Москвы</h3>
                     <p>У всех наших магазинов имеется большая посещаемость и конверсия, благодаря этому вы имеете отличную возможность раскрутить свой бренд</p>
                 </div>
-                <div class="section">
+                <div class="section" id="app_nav">
+                    <p v-text="vasa"></p>
                     <div class="nav">
                         <ul>
-                            <li>ТРЦ Метрополис</li>
-                            <li>ТРЦ Европейский</li>
-                            <li>ТРЦ Павлецкая плаза</li>
+                            <li @click="metrop">ТРЦ Метрополис</li>
+                            <li @click="europes">ТРЦ Европейский</li>
+                            <li @click="pavlec">ТРЦ Павлецкая плаза</li>
+                            
                         </ul>
-                        <p>Адрес: Ленинградское шоссе, 16Ас1</p>
+                        <p v-text="score"></p>
                     </div>
                     <div class="wrap">
                         <div class="wraper">
-                            <h5>11.3%</h5>
+                            <h5>{{message_convers}}</h5>
                             <p>конверсия</p>
                         </div>
                         <div class="wraper">
-                            <h5>20000</h5>
+                            <h5>{{message_passability}}</h5>
                             <p>проходимость</p>
                         </div>
                         <div class="wraper">
-                            <h5>885.5</h5>
+                            <h5>{{message_square}}</h5>
                             <p>площадь</p>
                         </div>
                     </div>
                 </div>
-                <div class="section">
+                <div class="section" id="app_nav-2">
                     <div class="nav">
                         <ul>
-                            <li>ТРЦ Метрополис</li>
-                            <li>ТРЦ Европейский</li>
-                            <li>ТРЦ Павлецкая плаза</li>
+                            <li @onclick="europolis">ТРЦ Европолис</li>
+                            <li @onclick="vesna">ТРЦ Весна</li>
+                            <li @onclick="afimol">ТРЦ Афимол сити</li>
                         </ul>
                         <p>Адрес: Ленинградское шоссе, 16Ас1</p>
                     </div>
@@ -191,5 +193,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="/script/Vue.js"></script>
 </body>
 </html>
