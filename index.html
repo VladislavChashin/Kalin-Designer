@@ -98,7 +98,6 @@
                     <p>У всех наших магазинов имеется большая посещаемость и конверсия, благодаря этому вы имеете отличную возможность раскрутить свой бренд</p>
                 </div>
                 <div class="section" id="app_nav">
-                    <p v-text="vasa"></p>
                     <div class="nav">
                         <ul>
                             <li @click="metrop">ТРЦ Метрополис</li>
@@ -106,7 +105,7 @@
                             <li @click="pavlec">ТРЦ Павлецкая плаза</li>
                             
                         </ul>
-                        <p v-text="score"></p>
+                        <p>{{message_adres}}</p>
                     </div>
                     <div class="wrap">
                         <div class="wraper">
@@ -123,26 +122,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="section" id="app_nav-2">
+                <div class="section" id="app_nav_two">
                     <div class="nav">
                         <ul>
-                            <li @onclick="europolis">ТРЦ Европолис</li>
-                            <li @onclick="vesna">ТРЦ Весна</li>
-                            <li @onclick="afimol">ТРЦ Афимол сити</li>
+                            <li @click="europolis">ТРЦ Европолис</li>
+                            <li @click="vesna">ТРЦ Весна</li>
+                            <li @click="afimol">ТРЦ Афимол сити</li>
                         </ul>
-                        <p>Адрес: Ленинградское шоссе, 16Ас1</p>
+                        <p>{{message_adres}}</p>
                     </div>
                     <div class="wrap">
                         <div class="wraper">
-                            <h5>11.3%</h5>
+                            <h5>{{message_convers}}</h5>
                             <p>конверсия</p>
                         </div>
                         <div class="wraper">
-                            <h5>20000</h5>
+                            <h5>{{message_passability}}</h5>
                             <p>проходимость</p>
                         </div>
                         <div class="wraper">
-                            <h5>885.5</h5>
+                            <h5>{{message_square}}</h5>
                             <p>площадь</p>
                         </div>
                     </div>

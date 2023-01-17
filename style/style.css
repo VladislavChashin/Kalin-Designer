@@ -472,6 +472,7 @@ header .articly .wrapper .content button:hover {
   border: 2px solid #000000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .about_us .content .ability {
@@ -537,6 +538,7 @@ header .articly .wrapper .content button:hover {
   border: 2px solid #000000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .about_us .content .coop {
@@ -605,6 +607,7 @@ header .articly .wrapper .content button:hover {
   border: 2px solid #000000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .about_us .content .shop {
@@ -882,6 +885,7 @@ header .articly .wrapper .content button:hover {
   border: 2px solid #000000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .partners .content .wraper_img {
@@ -1258,6 +1262,7 @@ header .articly .wrapper .content button:hover {
   border: 2px solid #000000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .coop .content .wraper {
@@ -1725,6 +1730,7 @@ header .articly .wrapper .content button:hover {
   opacity: 0.3;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  cursor: pointer;
 }
 .indication .content .section .nav ul li:hover {
   opacity: 1;
@@ -1817,6 +1823,7 @@ header .articly .wrapper .content button:hover {
   border: 2px solid #000000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .indication .content .section .wrap .wraper {
