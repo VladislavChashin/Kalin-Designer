@@ -1,5 +1,5 @@
 @import url(reset.css);
-@import url(Kalin-Designer/fonts/inter/inter-fonts.css);
+@import url(../fonts/inter/inter-fonts.css);
 @import url(Kalin-Designer/fonts/ruberoid/rub-fonts.css);
 @import url(anim.css);
 h5 {
