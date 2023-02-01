@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/anim.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
     <title>Kalina-Designer</title>
 </head>
 <body>
+<div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+
+
     <header>
         <div class="static">
             <div class="content">
@@ -42,7 +48,7 @@
         </div>
         <div class="articly">
             <div class="wrapper">
-                <div class="content">
+                <div class="content wow">
                     <h1>Разместите свою коллекцию <br> среди лучших дизайнеров России</h1>
                     <button>Узнать подробнее</button>
                 </div>
@@ -110,6 +116,14 @@
                     <p>У всех наших магазинов имеется большая посещаемость и конверсия, благодаря этому вы имеете отличную возможность раскрутить свой бренд</p>
                 </div>
                 <div class="section" id="app_nav">
+                    <div class="dropdown">
+                        <button class="dropbtn">Адреса</button>
+                        <div class="dropdown-content">
+                          <a @click="metrop">ТРЦ Метрополис</a>
+                          <a @click="europes">ТРЦ Европейский</a>
+                          <a @click="pavlec">ТРЦ Павлецкая плаза</a>
+                        </div>
+                    </div>
                     <div class="nav">
                         <ul>
                             <li @click="metrop">ТРЦ Метрополис</li>
@@ -135,6 +149,14 @@
                     </div>
                 </div>
                 <div class="section" id="app_nav_two">
+                    <div class="dropdown">
+                        <button class="dropbtn">Адреса</button>
+                        <div class="dropdown-content">
+                          <a @click="europolis">ТРЦ Европолис</a>
+                          <a @click="vesna">ТРЦ Весна</a>
+                          <a @click="afimol">ТРЦ Афимол сити</a>
+                        </div>
+                      </div>
                     <div class="nav">
                         <ul>
                             <li @click="europolis">ТРЦ Европолис</li>
@@ -184,10 +206,10 @@
                 <div class="nav">
                     <p>Навигация</p>
                     <ul>
-                        <li><a href="">О проекте</a></li>
-                        <li><a href="">Бренды</a></li>
-                        <li><a href="">Сотрудничество</a></li>
-                        <li><a href="">Показатели</a></li>
+                        <li><a href="#about">О проекте</a></li>
+                        <li><a href="#brand">Бренды</a></li>
+                        <li><a href="#coop">Сотрудничество</a></li>
+                        <li><a href="#indic">Показатели</a></li>
                         
                     </ul>
                 </div>

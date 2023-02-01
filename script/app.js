@@ -1,3 +1,8 @@
+window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+
+
 const anchors = document.querySelectorAll('a[href^="#"]')
 
 // Цикл по всем ссылкам
@@ -13,3 +18,4 @@ for(let anchor of anchors) {
     })
   })
 }
+
