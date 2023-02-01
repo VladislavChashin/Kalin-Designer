@@ -1,6 +1,6 @@
 @import url(reset.css);
-@import url(../fonts/inter/inter-fonts.css);
-@import url(../fonts/ruberoid/rub-fonts.css);
+@import url(/fonts/inter/inter-fonts.css);
+@import url(/fonts/ruberoid/rub-fonts.css);
 @import url(anim.css);
 @-webkit-keyframes spin {
   0% {
@@ -143,7 +143,7 @@ body {
 }
 
 header {
-  background-image: url(../image/header-fon.jpg);
+  background-image: url(/image/header-fon.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -524,6 +524,10 @@ header .articly .wrapper .content button:hover {
   text-transform: uppercase;
   color: #222222;
   opacity: 0.5;
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 @media (max-width: 768px) {
   .about_us .content h4 {
@@ -580,6 +584,10 @@ header .articly .wrapper .content button:hover {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   width: 275px;
   height: 275px;
   display: -webkit-box;
@@ -646,6 +654,10 @@ header .articly .wrapper .content button:hover {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   width: 275px;
   height: 275px;
   display: -webkit-box;
@@ -715,6 +727,10 @@ header .articly .wrapper .content button:hover {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   width: 275px;
   height: 275px;
   display: -webkit-box;
@@ -968,6 +984,10 @@ header .articly .wrapper .content button:hover {
   text-transform: uppercase;
   color: #222222;
   opacity: 0.5;
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 @media (max-width: 768px) {
   .partners .content h4 {
@@ -1052,6 +1072,10 @@ header .articly .wrapper .content button:hover {
   }
 }
 .partners .content .wraper_img img {
+  -webkit-animation: fadeInUpBig;
+          animation: fadeInUpBig;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   width: 150px;
 }
 .partners .content button {
@@ -1338,6 +1362,10 @@ header .articly .wrapper .content button:hover {
   text-transform: uppercase;
   color: #222222;
   opacity: 0.5;
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 @media (max-width: 768px) {
   .coop .content h4 {
@@ -1391,6 +1419,10 @@ header .articly .wrapper .content button:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 @media (max-width: 1024px) {
   .coop .content .wraper {
@@ -1451,6 +1483,10 @@ header .articly .wrapper .content button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-height: 170px;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 @media (max-width: 980px) {
   .coop .content .article {
@@ -1698,6 +1734,10 @@ header .articly .wrapper .content button:hover {
   text-transform: uppercase;
   color: #222222;
   opacity: 0.5;
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 @media (max-width: 768px) {
   .indication .content h4 {
@@ -1835,6 +1875,10 @@ header .articly .wrapper .content button:hover {
 }
 .indication .content .section .nav {
   width: 100%;
+  -webkit-animation: lightSpeedInRight;
+          animation: lightSpeedInRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 .indication .content .section .nav ul {
   display: -webkit-box;
@@ -1973,6 +2017,10 @@ header .articly .wrapper .content button:hover {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 @media (max-width: 425px) {
   .indication .content .section .wrap {
@@ -2088,7 +2136,7 @@ header .articly .wrapper .content button:hover {
   height: auto;
   margin: 100px 0 50px 0;
   padding: 50px 0 50px 0;
-  background-image: url(../image/contact-fon.jpg);
+  background-image: url(/image/contact-fon.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2146,6 +2194,10 @@ header .articly .wrapper .content button:hover {
   text-transform: uppercase;
   color: #222222;
   opacity: 0.5;
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   color: #FAFAFA;
   opacity: 1;
 }
@@ -2289,6 +2341,10 @@ footer .content .wraper {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 30px;
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 @media (max-width: 480px) {
   footer .content .wraper .nav {

@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/anim.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="script/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <title>Kalina-Designer</title>
 </head>
 <body>
@@ -48,7 +52,7 @@
         </div>
         <div class="articly">
             <div class="wrapper">
-                <div class="content wow">
+                <div class="content">
                     <h1>Разместите свою коллекцию <br> среди лучших дизайнеров России</h1>
                     <button>Узнать подробнее</button>
                 </div>
@@ -58,17 +62,17 @@
     <main>
         <div class="about_us">
             <div class="content" id="about">
-                <h4>О нас</h4>
+                <h4 class="wow">О нас</h4>
                 <h3>Мультибрендовый универмаг женской одежды KALINA собрал в одном пространстве лучших российских дизайнеров, каждый из которых обладает своим фирменным стилем и уникальной философией бренда.</h3>
-                <div class="ability">
+                <div class="ability wow">
                     <h5>12.500</h5>
                     <p>средняя проходимость</p>
                 </div>
-                <div class="coop">
+                <div class="coop wow">
                     <h5>>60</h5>
                     <p>брендов с нами сотрудничают</p>
                 </div>
-                <div class="shop">
+                <div class="shop wow">
                     <h5>7</h5>
                     <p>магазинов в Москве</p>
                 </div>
@@ -76,32 +80,32 @@
         </div>
         <div class="partners" id="brand">
             <div class="content">
-                <h4>Партнеры</h4>
-                <div class="wraper_img"><img src="image/nikifilini-logo.svg" alt="logo-brends" srcset=""></div>
-                <div class="wraper_img"><img src="image/mankova-logo.svg" alt="logo-brends" srcset=""></div>
-                <div class="wraper_img"><img src="image/tatabronk-logo.svg" alt="logo-brends" srcset=""></div>
-                <div class="wraper_img"><img src="image/logo-feelz.svg" alt="logo-brends" srcset=""></div>
-                <div class="wraper_img"><img src="image/mukhastore-logo.svg" alt="logo-brends" srcset=""></div>
-                <div class="wraper_img"><img src="image/lavarice_logo.svg" alt="logo-brends" srcset=""></div>
+                <h4 class="wow">Партнеры</h4>
+                <div class="wraper_img"><img class="wow" src="image/nikifilini-logo.svg" alt="logo-brends" srcset=""></div>
+                <div class="wraper_img"><img class="wow" src="image/mankova-logo.svg" alt="logo-brends" srcset=""></div>
+                <div class="wraper_img"><img class="wow" src="image/tatabronk-logo.svg" alt="logo-brends" srcset=""></div>
+                <div class="wraper_img"><img class="wow" src="image/logo-feelz.svg" alt="logo-brends" srcset=""></div>
+                <div class="wraper_img"><img class="wow" src="image/mukhastore-logo.svg" alt="logo-brends" srcset=""></div>
+                <div class="wraper_img"><img class="wow" src="image/lavarice_logo.svg" alt="logo-brends" srcset=""></div>
                 <button>Смотреть еще</button>
             </div>
         </div>
         <div class="coop">
             <div class="content" id="app" >
-                <h4>Как с нами сотрудничать?</h4>
-                <div class="article">
+                <h4 class="wow">Как с нами сотрудничать?</h4>
+                <div class="article wow">
                     <h3>Если вы российский дизайнер, бренд или марка и хотите</h3>
                     <p>Kalina это проект, который направлен на активное распространение и развитие fashion индустрии в России. На данный момент мы сотрудничаем более чем с 60 брендами и марками, но мы развиваемся и хотим дать возможность развиваться вам.</p>
                 </div>
-                <div class="wraper" @mouseover="upH1 = false, upP1 = true" @mouseleave="upH1 = true, upP1 = false">
+                <div class="wraper wow" @mouseover="upH1 = false, upP1 = true" @mouseleave="upH1 = true, upP1 = false">
                     <h6 v-show = 'upH1'>1</h6>
                     <p v-show = 'upP1'>Больше уделять времени творчеству и работе над коллекциями</p>
                 </div>
-                <div class="wraper" @mouseover="upH2 = false, upP2 = true" @mouseleave="upH2 = true, upP2 = false">
+                <div class="wraper wow" @mouseover="upH2 = false, upP2 = true" @mouseleave="upH2 = true, upP2 = false">
                     <h6 v-show = 'upH2'>2</h6>
                     <p v-show = 'upP2'>Больше уделять времени творчеству и работе над коллекциями</p>
                 </div>
-                <div class="wraper" @mouseover="upH3 = false, upP3 = true" @mouseleave="upH3 = true, upP3 = false">
+                <div class="wraper wow" @mouseover="upH3 = false, upP3 = true" @mouseleave="upH3 = true, upP3 = false">
                     <h6 v-show = 'upH3'>3</h6>
                     <p v-show = 'upP3'>Больше уделять времени творчеству и работе над коллекциями</p>
                 </div>
@@ -110,8 +114,8 @@
         </div>
         <div class="indication">
             <div class="content" id="indic">
-                <h4>Показатели</h4>
-                <div class="article">
+                <h4 class="wow">Показатели</h4>
+                <div class="article wow">
                     <h3>Магазины в лучших локациях Москвы</h3>
                     <p>У всех наших магазинов имеется большая посещаемость и конверсия, благодаря этому вы имеете отличную возможность раскрутить свой бренд</p>
                 </div>
@@ -124,7 +128,7 @@
                           <a @click="pavlec">ТРЦ Павлецкая плаза</a>
                         </div>
                     </div>
-                    <div class="nav">
+                    <div class="nav wow">
                         <ul>
                             <li @click="metrop">ТРЦ Метрополис</li>
                             <li @click="europes">ТРЦ Европейский</li>
@@ -133,7 +137,7 @@
                         </ul>
                         <p>{{message_adres}}</p>
                     </div>
-                    <div class="wrap">
+                    <div class="wrap wow">
                         <div class="wraper">
                             <h5>{{message_convers}}</h5>
                             <p>конверсия</p>
@@ -157,7 +161,7 @@
                           <a @click="afimol">ТРЦ Афимол сити</a>
                         </div>
                       </div>
-                    <div class="nav">
+                    <div class="nav wow">
                         <ul>
                             <li @click="europolis">ТРЦ Европолис</li>
                             <li @click="vesna">ТРЦ Весна</li>
@@ -165,7 +169,7 @@
                         </ul>
                         <p>{{message_adres}}</p>
                     </div>
-                    <div class="wrap">
+                    <div class="wrap wow">
                         <div class="wraper">
                             <h5>{{message_convers}}</h5>
                             <p>конверсия</p>
@@ -184,7 +188,7 @@
         </div>
         <div class="form-coop">
             <div class="content" id="coop">
-                <h4>Думаете о сотрудничестве?</h4>
+                <h4 class="wow">Думаете о сотрудничестве?</h4>
                 <div class="wraper">
                     <h3>Отавте заявку</h3>
                     <p>Наши менеджеры свяжутся с вами, чтобы обсудить вопросы волнующие вас.</p>
@@ -202,7 +206,7 @@
             <div class="img">
                 <img src="image/logo.svg" alt="">
             </div>
-            <div class="wraper">
+            <div class="wraper wow">
                 <div class="nav">
                     <p>Навигация</p>
                     <ul>
@@ -228,7 +232,6 @@
             </div>
         </div>
     </footer>
-    <script src="script/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="script/Vue.js"></script>
     <script src="script/app.js"></script>
