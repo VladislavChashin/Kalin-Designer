@@ -1,6 +1,6 @@
 @import url(reset.css);
-@import url(/fonts/inter/inter-fonts.css);
-@import url(/fonts/ruberoid/rub-fonts.css);
+@import url(../fonts/inter/inter-fonts.css);
+@import url(../fonts/ruberoid/rub-fonts.css);
 @import url(anim.css);
 @-webkit-keyframes spin {
   0% {
@@ -143,7 +143,7 @@ body {
 }
 
 header {
-  background-image: url(/image/header-fon.jpg);
+  background-image: url(../image/header-fon.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2088,7 +2088,7 @@ header .articly .wrapper .content button:hover {
   height: auto;
   margin: 100px 0 50px 0;
   padding: 50px 0 50px 0;
-  background-image: url(/image/contact-fon.jpg);
+  background-image: url(../image/contact-fon.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
