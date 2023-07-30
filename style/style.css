@@ -143,11 +143,12 @@ body {
 }
 
 header {
-  background-image: url(../image/header-fon.jpg);
+  background-image: url(../image/header-fon.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+
 }
 header .static {
   position: fixed;
@@ -528,6 +529,7 @@ header .articly .wrapper .content button:hover {
           animation: fadeInLeft;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  padding-left: 5px;
 }
 @media (max-width: 768px) {
   .about_us .content h4 {
@@ -562,6 +564,7 @@ header .articly .wrapper .content button:hover {
   .about_us .content h3 {
     font-size: 25px;
     line-height: 100%;
+    padding: 0 5px 0 5px;
   }
 }
 @media (max-width: 768px) {
@@ -699,6 +702,7 @@ header .articly .wrapper .content button:hover {
   letter-spacing: -0.03em;
   color: #222222;
   max-width: 153px;
+  
 }
 @media (max-width: 1024px) {
   .about_us .content .coop p {
@@ -988,6 +992,7 @@ header .articly .wrapper .content button:hover {
           animation: fadeInLeft;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  padding-left: 5px;
 }
 @media (max-width: 768px) {
   .partners .content h4 {
@@ -1366,6 +1371,7 @@ header .articly .wrapper .content button:hover {
           animation: fadeInLeft;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  padding-left: 5px;
 }
 @media (max-width: 768px) {
   .coop .content h4 {
@@ -1535,6 +1541,7 @@ header .articly .wrapper .content button:hover {
   letter-spacing: -0.03em;
   color: #222222;
   opacity: 0.5;
+  padding-left: 5px;
 }
 @media (max-width: 560px) {
   .coop .content .article p {
@@ -1544,6 +1551,7 @@ header .articly .wrapper .content button:hover {
     max-height: -webkit-max-content;
     max-height: -moz-max-content;
     max-height: max-content;
+    
   }
 }
 .coop .content .article h3 {
@@ -1560,6 +1568,7 @@ header .articly .wrapper .content button:hover {
           align-items: center;
   letter-spacing: -0.05em;
   color: #222222;
+  padding-left: 5px;
 }
 @media (max-width: 768px) {
   .coop .content .article h3 {
